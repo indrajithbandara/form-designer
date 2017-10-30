@@ -4,9 +4,9 @@ export default {
     method: 'GET',
     layout: 'vertical', // ['horizontal']
     labelWidth: '80px',
-    callback: (formData) => {
-      console.log(formData)
-    }
+    callback: () => {
+      // console.log(formData);
+    },
   },
   // position: [
   //   {x: 0, y: 0, w: 12, h: 3, i: '0'},
@@ -20,69 +20,69 @@ export default {
   // ],
   position: [
     {
-      'x': 0,
-      'y': 0,
-      'w': 4,
-      'h': 3,
-      'i': '0',
-      'moved': false
+      x: 0,
+      y: 0,
+      w: 4,
+      h: 3,
+      i: '0',
+      moved: false,
     },
     {
-      'x': 4,
-      'y': 0,
-      'w': 4,
-      'h': 3,
-      'i': '1',
-      'moved': false
+      x: 4,
+      y: 0,
+      w: 4,
+      h: 3,
+      i: '1',
+      moved: false,
     },
     {
-      'x': 8,
-      'y': 0,
-      'w': 4,
-      'h': 3,
-      'i': '2',
-      'moved': false
+      x: 8,
+      y: 0,
+      w: 4,
+      h: 3,
+      i: '2',
+      moved: false,
     },
     {
-      'x': 0,
-      'y': 3,
-      'w': 12,
-      'h': 3,
-      'i': '3',
-      'moved': false
+      x: 0,
+      y: 3,
+      w: 12,
+      h: 3,
+      i: '3',
+      moved: false,
     },
     {
-      'x': 0,
-      'y': 6,
-      'w': 12,
-      'h': 3,
-      'i': '4',
-      'moved': false
+      x: 0,
+      y: 6,
+      w: 12,
+      h: 3,
+      i: '4',
+      moved: false,
     },
     {
-      'x': 0,
-      'y': 9,
-      'w': 12,
-      'h': 3,
-      'i': '5',
-      'moved': false
+      x: 0,
+      y: 9,
+      w: 12,
+      h: 3,
+      i: '5',
+      moved: false,
     },
     {
-      'x': 0,
-      'y': 12,
-      'w': 12,
-      'h': 3,
-      'i': '6',
-      'moved': false
+      x: 0,
+      y: 12,
+      w: 12,
+      h: 3,
+      i: '6',
+      moved: false,
     },
     {
-      'x': 0,
-      'y': 15,
-      'w': 12,
-      'h': 3,
-      'i': '7',
-      'moved': false
-    }
+      x: 0,
+      y: 15,
+      w: 12,
+      h: 3,
+      i: '7',
+      moved: false,
+    },
   ],
   list: [{
     type: 'input',
@@ -98,9 +98,9 @@ export default {
       {
         required: false,
         message: '姓名不能为空',
-        trigger: 'blur'
-      }
-    ]
+        trigger: 'blur',
+      },
+    ],
   }, {
     type: 'textarea',
     label: '描述',
@@ -115,9 +115,9 @@ export default {
       {
         required: false,
         message: '姓名不能为空',
-        trigger: 'blur'
-      }
-    ]
+        trigger: 'blur',
+      },
+    ],
   }, {
     type: 'checkbox',
     label: '技能',
@@ -131,9 +131,9 @@ export default {
     rules: [
       {
         required: false,
-        message: '至少选择一个技能'
-      }
-    ]
+        message: '至少选择一个技能',
+      },
+    ],
   }, {
     type: 'radio',
     label: '性别',
@@ -147,9 +147,9 @@ export default {
     rules: [
       {
         required: false,
-        message: '请选择性别'
-      }
-    ]
+        message: '请选择性别',
+      },
+    ],
   }, {
     type: 'select',
     label: '城市',
@@ -163,9 +163,9 @@ export default {
     rules: [
       {
         required: false,
-        message: '请选择城市'
-      }
-    ]
+        message: '请选择城市',
+      },
+    ],
   }, {
     type: 'date',
     label: '开始日期',
@@ -180,9 +180,9 @@ export default {
     rules: [
       {
         required: false,
-        message: '请选择开始时间'
-      }
-    ]
+        message: '请选择开始时间',
+      },
+    ],
   }, {
     type: 'date',
     label: '开始时间',
@@ -197,9 +197,9 @@ export default {
     rules: [
       {
         required: false,
-        message: '请选择开始时间'
-      }
-    ]
+        message: '请选择开始时间',
+      },
+    ],
   }, {
     type: 'upload',
     label: '上传文件',
@@ -215,8 +215,8 @@ export default {
     rules: [
       {
         required: false,
-        message: '请上传文件'
-      }
-    ]
-  }]
-}
+        message: '请上传文件',
+      },
+    ],
+  }],
+};

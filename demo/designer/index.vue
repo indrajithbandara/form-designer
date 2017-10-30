@@ -9,13 +9,14 @@
   )
 </template>
 <script>
-import schema from './schema'
-import FormDesigner from '@/components/form-designer'
+import FormDesigner from '@/components/form-designer';
+import schema from './schema';
+
 export default {
   components: {
-    FormDesigner
+    FormDesigner,
   },
-  data () {
+  data() {
     return {
       options: [],
       model: {
@@ -26,19 +27,19 @@ export default {
         desc: '这是一段描述信息',
         startDate: '2016-12-12',
         startTime: '2016-12-12 12:43:32',
-        image: 'http://www.baidu.com'
+        image: 'http://www.baidu.com',
       },
-      schema
-    }
+      schema,
+    };
   },
   methods: {
-    handleSuccess (msg) {
-      this.$Message.success(msg)
+    handleSuccess(msg) {
+      this.$Message.success(msg);
     },
-    handleError (msg) {
-      console.log(msg)
+    handleError() {
+      // console.log(msg);
       // this.$Message.error(msg)
-    }
-  }
-}
+    },
+  },
+};
 </script>
