@@ -1,3 +1,5 @@
-export const getCount = state => {
-  return state.circuit.count
-}
+export default {
+  getCount(state) {
+    return state.circuit.count;
+  },
+};
